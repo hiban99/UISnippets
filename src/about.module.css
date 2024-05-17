@@ -1,0 +1,140 @@
+#about{
+    height: 100svh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.cardDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:  5rem;
+    width: 100%;
+}
+
+.card {
+    width: 25%;
+    height: 65svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(97, 97, 97);
+    position: relative;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition-duration: .2s;
+    background: linear-gradient(0deg, #000, #272727);
+    margin-bottom: -200px;
+  }
+  
+  .card:before, .card:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background:  linear-gradient(315deg, #03a9f4, #ff0058);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  .cardicon img{
+    height: 200px;
+    width: 200px;
+    margin-top: -80px;
+  
+  }
+  .cardicon{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .cardtext{
+    height: 60%;
+    width: 95%;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+  
+    50% {
+      background-position: 400% 0;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .card:after {
+    filter: blur(60px);
+  }
+  @media screen and (max-width: 768px) {
+    #about{
+      height: 100svh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 150px;
+      
+      
+  }
+    .cardDiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1px;
+      width: 100%;
+      height: 90svh;
+      margin-bottom: -98px;
+    }
+    .card{
+      height: 25svh;
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .header{
+      font-size: 2.2rem;
+      margin-bottom: -65px;
+    }
+    .cardicon img{
+      height: 70px;
+      width: 70px;
+    }
+    .cardtext{
+      font-size: 14px;
+      margin-top: -39px;
+    }
+    .cardicon{
+      height: 100%;
+      width: 20%;
+    }
+  }
+
+  
+  

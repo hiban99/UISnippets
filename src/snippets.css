@@ -1,0 +1,60 @@
+
+  #Snippets {
+    height: 580svh;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wraper{
+    width: 85%;
+    height: 150svh;
+    border: 1px solid rgb(99, 99, 99);
+    box-shadow: 1px 1px rgb(99, 99, 99);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin:250px auto 80px auto;
+    
+  }
+  .div{
+    height: 500px;
+    width: 500px;
+    box-shadow: 1px 1px 1px rgb(99, 99, 99);
+    background-color: rgb(60, 60, 60);
+    border-radius: 15px;
+  }
+  .snippetsheader{
+    font-size: 4.5rem;
+    margin-bottom: -190px;
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background-clip: text;
+    color: transparent;
+  }
+  @media (max-width: 768px) {
+    #snippets{
+      height: 550svh;
+      width: 100%;
+
+    }
+    .wraper{
+      width: 90%;
+      height: 150svh;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      overflow-y: auto;
+  }
+  .div{
+    height: 450px;
+    width: 100%;
+  }
+  .snippetsheader{
+    font-size: 2.5rem;
+  }
+}
+  

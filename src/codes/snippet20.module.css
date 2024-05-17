@@ -1,0 +1,125 @@
+.codediv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.codewraper{
+    height: 60%;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1;
+}
+.code{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -120px;
+}
+.card {
+  width: 210px;
+  height: 200px;
+  border-radius: 4px;
+  background: #212121;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #212121;
+  border: 1px solid #ff5a91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p:hover {
+  flex: 4;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #ff568e;
+  letter-spacing: .1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+  .codeeditor {
+    width: 200px;
+    height: 250px;
+    background-color: #1d1e22;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 2px;
+    overflow-y:auto;
+    overflow-x: auto;
+    margin-right: 10px;
+    
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .title {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.57px;
+    color: rgb(212 212 212);
+  }
+  
+  .icon {
+    width: 20px;
+    transition: .2s ease;
+  }
+  
+  .icon:hover {
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #6e7281;
+  }
+  
+  .editorcontent {
+    margin: 0 10px 10px;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    .codewraper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .codeeditor{
+    width: 160px;
+  }
+}
+  
+  
+  
+  

@@ -1,0 +1,227 @@
+
+
+#footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 50vh; 
+    width: 100%;
+    background-color: rgb(97, 97, 97);
+
+   
+}
+
+#visual {
+margin-top: -71px;
+
+}
+.logo h1{
+    font-size: 5.5rem;
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background-clip: text;
+    color: transparent;
+}
+.logo{
+    max-width: 25%;
+   max-height: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.logo h1{
+    margin-left: -220px;
+    margin-right: 130px;
+}
+.navbar{
+    float: right;
+    width: 25%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-top: -30px;
+}
+.navbar a{
+ font-size: 2rem;
+ background: linear-gradient(315deg, #03a9f4, #ff0058);
+ background-clip: text;
+ list-style: none;
+ font-weight: 900;
+ color: transparent;
+}
+.navbar li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.social{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights{
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 45px;
+}
+.card {
+    display: flex;
+    height: 70px;
+    width: 350px;
+  }
+  
+  .card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .card .socialLink1,.card .socialLink2,.card .socialLink3,.card .socialLink4,.card .socialLink5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .card svg {
+    transform: scale(1);
+  }
+  
+  .card .socialLink1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .socialLink2:hover {
+    background-color: #242c34;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .socialLink3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .socialLink4:hover {
+    background-color: #0a66c2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .socialLink5:hover {
+    background-color: #ff8000;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+.wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 120px;
+    
+    
+}
+.copyrights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights h1{
+    font-size: 1.5rem;
+    color: #fff;
+}
+@media (max-width:768px){
+  #footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 55svh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wraper{
+    max-width: 100%;
+    height: 20svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo h1{
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .navbar{
+    width: 25%;
+  }
+  .navbar  li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .social{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 70px;
+    
+  }
+  .social svg{
+    height: 35px;
+    width: 35px;
+  }
+  .copyrights h1{
+    font-size: 1rem;
+  }
+}

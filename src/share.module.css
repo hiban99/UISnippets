@@ -1,0 +1,242 @@
+#share{
+    padding: 0;
+    box-sizing: border-box;
+    height: 100svh;
+    width: 100%;
+    margin-top: 300px;
+    
+   
+}
+.leftdiv{
+    width: 40%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 30px;
+}
+.rightdiv{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftdiv h1{
+    font-size: 3.5rem;
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    background-clip: text;
+    color: transparent;
+
+}
+.leftdiv p{
+    color: rgb(97, 97, 97);
+    font-family: inherit;
+    font-size: 1.8rem;
+}
+.cardicon img{
+ height: 100px;
+ width: 100px;   
+}
+.card {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: lightgrey;
+    border-radius: 80px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 1s ease-in-out;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  
+  .background {
+    position: absolute;
+    inset: 0;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  }
+  
+  .logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+    font-size: 3em;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 3px;
+  }
+  
+  .logo .logo-svg {
+    fill: white;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+ 
+  .icon .svg {
+    fill: rgba(255, 255, 255, 0.797);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+  
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box:hover .svg {
+    fill: white;
+
+    
+  }
+  
+  .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -70%;
+    left: -70%;
+  }
+  
+  .box1::before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+  }
+  
+  .box1:hover::before {
+    opacity: 1;
+  }
+  
+  .box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -50%;
+    left: -50%;
+    transition-delay: 0.2s;
+  }
+  
+  .box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+  }
+  
+  .box2:hover::before {
+    opacity: 1;
+  }
+  
+  .box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -30%;
+    left: -30%;
+    transition-delay: 0.4s;
+  }
+  
+  .box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  }
+  
+  .box3:hover::before {
+    opacity: 1;
+  }
+  
+  .box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box4 {
+    width: 0%;
+    height: 10%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.6s;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+  
+  .card:hover .logo {
+    transform: translate(70px, -102px);
+    letter-spacing: 0px;
+  }
+  @media (max-width: 768px) {
+    #share{
+      height: 100svh;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-top: 200px;
+   
+    }
+    .card{
+      height: 35svh;
+      width: 75%;
+      border-radius: 45px;
+      margin:70px auto 30px auto ;
+      
+    }
+    .leftdiv{
+      width: 100%;
+      height: 40svh;
+      margin-bottom: -400px;
+
+    }
+    .leftdiv h1{
+      font-size: 1.8rem;
+    }
+    .leftdiv p{
+      font-size: 1.2rem;
+    }
+    .rightdiv{
+      width: 100%;
+      height: 40svh;
+      margin-top: -300px;
+      margin-bottom: 80px;
+    }
+    .cardicon img{
+      width: 50px;
+      height: 50px;
+    }
+    
+  }

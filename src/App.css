@@ -1,0 +1,26 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  
+ 
+}
+body {
+  background-image: url("/blurry-gradient-haikei.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450vh;
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: 960svh;
+   
+    
+  }
+}
